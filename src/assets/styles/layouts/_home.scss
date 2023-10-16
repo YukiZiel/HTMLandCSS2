@@ -11,16 +11,17 @@ body {
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-color: $uoc-bg;
+  background-image: url('/src/assets/images/Bandaloop-City-Hall.jpg');
+  //background-color: $uoc-bg;
   color: $uoc-body;
 }
 
 .uoc-container {
-  max-width: 800px;
+  max-width: 1100px;
   margin: auto;
-  padding: 2rem;
+  padding: 3rem 6rem;
   border-radius: 2rem;
-  text-align: center;
+  text-align: justify;
   background-color: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -44,7 +45,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: $uoc-corporate;
-
+  margin-top: 100px;
   @media (min-width: $mqMinWidth) {
     font-size: 36px;
   }
@@ -52,6 +53,31 @@ body {
 
 .uoc-container i {
   color: $uoc-icon;
+}
+
+.video-frame {
+  display: flex;
+}
+
+.video-frame figure{
+  margin-inline: auto;
+}
+
+.video-frame iframe {
+  max-height: 200px;
+  max-width: 400px;
+}
+
+.video-frame figcaption {
+  text-align: center;
+}
+
+.list-move {
+  margin-inline: 40px;
+}
+
+.fa-square {
+  font-size: 10px;
 }
 
 .uoc-footer {

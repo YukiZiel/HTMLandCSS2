@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTBN_UIhn2rVxRIAmWPgjEXzqzo1DAyq4&callback=inicializarMapa" async defer></script>
+    <script>
+      function inicializarMapa() {
+        var ubicacion = { lat: 41.395004993035215, lng:  2.1936397613764154 };
+        var mapa = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15, // Puedes ajustar el nivel de zoom
+          center: ubicacion
+        });
+        var marcador = new google.maps.Marker({ position: ubicacion, map: mapa });
+      }
+   </script>
+
+    <!-- AIzaSyBTBN_UIhn2rVxRIAmWPgjEXzqzo1DAyq4 -->
   </head>
   <body>
     <div class="uoc-container">
@@ -13,13 +26,95 @@
         <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
         <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
       </picture>
-      <h1 class="uoc-title">Hello, UOC! <i class="fas fa-university"></i></h1>
+      <h1 class="uoc-title">Danza vertical</h1>
       <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+        La danza vertical, también conocida como "danza en altura" o "aérea", es una forma de expresión artística en la que los artistas realizan movimientos y coreografías suspendidos en el aire, generalmente utilizando cuerdas, arneses, aros, telas, o cualquier otra estructura diseñada para soportar su peso. Es una disciplina que combina la danza contemporánea, la acrobacia y la escalada, y se ha convertido en una forma emocionante y visualmente impactante de arte escénico.
       </p>
+      <p>
+        A continuación hay dos vídeos de danza vertical, uno grupal pero con movimientos individuales y otro en pareja con movimientos conjuntos.
+      </p>
+      <div class="video-frame">
+        <figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/K5RGr4zsyHY?si=FgwMFUFLKh_lK0fm&amp;start=43" title="YouTube video Bandaloop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <figcaption>Coreografía grupal de Bandaloop</figcaption>
+        </figure>
+        <figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/n9ZdcKaDWRA?si=XVPOt6HoqYgo_vbI&amp;start=31" title="YouTube video Zárate" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <figcaption>Coreografía en pareja de Zárate</figcaption>
+        </figure>
+      </div>
+      <h2 class="uoc-subtitle">Movimientos de danza vertical</h2>
+      <p>
+        La danza vertical implica una variedad de movimientos que se pueden adaptar y combinar de muchas maneras para crear coreografías impactantes. A continuación, hay algunos de los movimientos utilizados en la danza vertical:
+      </p>
+      <ul class="list-move">
+        <li>Establecer posturas y posiciones elegantes con movimientos de brazos y piernas que crean líneas estilizadas y atractivas.
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+        </li>
+        <li>Subir y bajar en cuerdas, que implica técnicas de escalada y descenso seguras.
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+        </li>
+        <li>Giros en dispositivos de suspensión o en el aire.
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+        </li>
+        <li>Piruetas en dispositivos de suspensión o en el aire.
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+        </li>
+        <li>Posiciones de fuerza y equilibrio, como la plancha, la posición de ángel y otras figuras que requieren fuerza en el núcleo y los músculos superiores.
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+        </li>
+        <li>Invertir el cuerpo.
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+        </li>
+        <li>Caer de manera controlada. Fundamental para la seguridad y para crear efectos visuales impactantes.
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+        </li>
+        <li>Sujetar objetos en giros y piruetas.
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-regular fa-square"></i>
+        </li>
+        <li>Sujetar a compañeros.
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+          <i class="fa-solid fa-square"></i>
+        </li>
+      </ul>
+      <p>Los niveles indicados representan las dificultades, según mi experiencia.</p>
+      <p>El centro donde practico danza vertical se llama Soulivre y se encuentra en C. de Llull, 68, Barcelona</p>
+      <div id="map"></div>
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
