@@ -6,19 +6,6 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTBN_UIhn2rVxRIAmWPgjEXzqzo1DAyq4&callback=inicializarMapa" async defer></script>
-    <script>
-      function inicializarMapa() {
-        var ubicacion = { lat: 41.395004993035215, lng:  2.1936397613764154 };
-        var mapa = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15, // Puedes ajustar el nivel de zoom
-          center: ubicacion
-        });
-        var marcador = new google.maps.Marker({ position: ubicacion, map: mapa });
-      }
-   </script>
-
-    <!-- AIzaSyBTBN_UIhn2rVxRIAmWPgjEXzqzo1DAyq4 -->
   </head>
   <body>
     <div class="uoc-container">
@@ -113,8 +100,8 @@
         </li>
       </ul>
       <p>Los niveles indicados representan las dificultades, según mi experiencia.</p>
-      <p>El centro donde practico danza vertical se llama Soulivre y se encuentra en C. de Llull, 68, Barcelona</p>
-      <div id="map"></div>
+      <p>El centro donde practico danza vertical se llama Soulivre y se encuentra en C. de Llull, 68, Barcelona.</p>
+
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
