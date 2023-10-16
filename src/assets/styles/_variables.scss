@@ -8,8 +8,9 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 $uoc-corporate: #000078;
 $uoc-body: #000078;
 $uoc-icon:#73edff;
+$uoc-link:#fe5d00;
 $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
-$mqMinWidth: 420px;
+$mqMaxWidth: 420px;
 $uoc-footer:#000078;

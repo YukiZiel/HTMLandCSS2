@@ -14,12 +14,16 @@ body {
   background-image: url('/src/assets/images/Bandaloop-City-Hall.jpg');
   //background-color: $uoc-bg;
   color: $uoc-body;
+  @media (max-width: $mqMaxWidth) {
+      font-size: 14px;
+      color: $uoc-bg;
+  }
 }
 
 .uoc-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 3rem 6rem;
+  max-width: 90%;
+  margin-inline: auto;
+  padding: 5% 10%;
   border-radius: 2rem;
   text-align: justify;
   background-color: #fff;
@@ -32,27 +36,34 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
-  max-width: 200px;
+  max-width: 50%;
+  min-width: 200px;
   height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
-  }
 }
 
 .uoc-title {
   font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
   color: $uoc-corporate;
+  font-size: 36px;
   margin-top: 100px;
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+  font-weight: 700;
+  @media (max-width: $mqMaxWidth) {
+    font-size: 20px;
+    color: red;
   }
 }
 
 .uoc-container i {
   color: $uoc-icon;
+}
+
+.uoc-container a {
+  text-decoration: none;
+  color: $uoc-link;
+}
+
+.uoc-container a:hover {
+  font-weight: bold;
 }
 
 .video-frame {
@@ -66,18 +77,45 @@ body {
 .video-frame iframe {
   max-height: 200px;
   max-width: 400px;
+  @media (max-width: $mqMaxWidth) {
+    flex-direction: column; 
+    align-items: center; 
+  }
 }
 
 .video-frame figcaption {
   text-align: center;
 }
 
-.list-move {
+.list-move, 
+.list-activities {
   margin-inline: 40px;
+}
+
+.list-activities {
+  column-count: 2;
 }
 
 .fa-square {
   font-size: 10px;
+}
+
+.images-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (max-width: $mqMaxWidth) {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+
+.images-group img {
+  max-width: 100%;
+  min-width: 200px;
+  height: auto;
+  width: 30%;
+  margin: 5px;
 }
 
 .uoc-footer {
