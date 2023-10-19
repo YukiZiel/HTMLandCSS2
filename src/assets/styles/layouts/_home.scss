@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
   box-sizing: border-box;
 }
@@ -11,116 +12,142 @@ body {
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-image: url('/src/assets/images/Bandaloop-City-Hall.jpg');
-  //background-color: $uoc-bg;
   color: $uoc-body;
-  @media (max-width: $mqMaxWidth) {
-      font-size: 14px;
-      color: $uoc-bg;
-  }
+  background-image: url("/src/assets/images/Bandaloop-City-Hall.jpg");
 }
 
-.uoc-container {
+
+/* Componente Contenedor Principal */
+.main-container {
   max-width: 90%;
   margin-inline: auto;
   padding: 5% 10%;
   border-radius: 2rem;
   text-align: justify;
   background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  @media (max-width: $mqMaxWidth) {
+  margin: 0;
+  max-width: 100%;
+  }
 }
 
-.uoc-logo {
+
+/* Componente Logo */
+.logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
+  margin-inline: auto;
   max-width: 50%;
   min-width: 200px;
   height: auto;
+  margin-bottom: 1.5rem;
 }
 
-.uoc-title {
+
+/* Componente Título */
+.title {
   font-family: $font-family-serif;
-  color: $uoc-corporate;
   font-size: 36px;
-  margin-top: 100px;
   font-weight: 700;
-  @media (max-width: $mqMaxWidth) {
-    font-size: 20px;
-    color: red;
-  }
+  color: $uoc-corporate;
+  margin-top: 100px;
 }
 
-.uoc-container i {
+
+/* Componente Subtítulo */
+.subtitle {
+  line-height: 30px;
+}
+
+
+/* Componente Icono Cuadrado de los niveles de dificultad*/
+i {
   color: $uoc-icon;
-}
-
-.uoc-container a {
-  text-decoration: none;
-  color: $uoc-link;
-}
-
-.uoc-container a:hover {
-  font-weight: bold;
-}
-
-.video-frame {
-  display: flex;
-}
-
-.video-frame figure{
-  margin-inline: auto;
-}
-
-.video-frame iframe {
-  max-height: 200px;
-  max-width: 400px;
-  @media (max-width: $mqMaxWidth) {
-    flex-direction: column; 
-    align-items: center; 
-  }
-}
-
-.video-frame figcaption {
-  text-align: center;
-}
-
-.list-move, 
-.list-activities {
-  margin-inline: 40px;
-}
-
-.list-activities {
-  column-count: 2;
 }
 
 .fa-square {
   font-size: 10px;
 }
 
-.images-group {
+
+/* Componente Enlace */
+a {
+  text-decoration: none;
+  color: $uoc-link;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+/* Componente de Videos e Imágenes */
+.video,
+.images {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   @media (max-width: $mqMaxWidth) {
     flex-direction: column; 
     align-items: center; 
   }
 }
 
-.images-group img {
+.video {
+  margin-inline: auto;
+}
+
+.video iframe {
+  max-height: 200px;
   max-width: 100%;
-  min-width: 200px;
+  min-width: 250px;
+  width: 400px;
+}
+
+.video figcaption {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  min-width: 250px;
+  width: 32%;
   height: auto;
-  width: 30%;
   margin: 5px;
 }
 
-.uoc-footer {
+
+/* Componente Lista */
+.list-move {
+  margin-inline: 0px;
+}
+
+.list-activities {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-inline: 0px;
+
+  @media (max-width: $mqMaxWidth) {
+    flex-direction: column;
+  }
+
+  .activities {
+    flex: 1;
+    padding: 0;
+    margin-inline: 50px; 
+    margin-block: 0px;
+  }
+}
+
+
+/* Componente Pie de Página */
+.footer {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
   color: $uoc-footer;
 }
+
