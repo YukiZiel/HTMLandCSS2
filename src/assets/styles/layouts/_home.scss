@@ -100,10 +100,10 @@ a {
 }
 
 .video iframe {
-  max-height: 200px;
   max-width: 100%;
   min-width: 250px;
   width: 400px;
+  max-height: 200px;
 }
 
 .video figcaption {
@@ -136,16 +136,16 @@ img {
 
   .activities {
     flex: 1;
-    padding: 0;
     margin-inline: 50px; 
     margin-block: 0px;
+    padding: 0;
   }
 }
 
 
 /* Componente Pie de Página */
 .footer {
-  margin-top: 1.5rem;
+  padding-block: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
   color: $uoc-footer;
